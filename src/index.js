@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import "@clayui/css/lib/css/atlas.css";
 import App from './App';
+import { HashRouter as Router } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 
 /* const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +14,9 @@ root.render(
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
